@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Lazy Loading </title>
+    <script src="./dist/img_Lazy.js"></script>
+    
+    <style>
+        .title {
+            font-size: 170px;
+            margin: 10% 15%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .cardWrap > li {
+            height: 500px;
+            margin-bottom: 200px;
+            text-align: center;
+        }
+        .cardWrap img{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <span class="title">Image Lazy Loading</span> 
+    <ul class="cardWrap"> 
+        <li><img class="lazy" data-src="./dist/img/1-min.jpg" src="./dist/img/loading.gif" alt="사진"></li>
+        <li><img class="lazy" data-src="./dist/img/2-min.jpg" src="./img/loading.gif" alt="사진"></li>
+        <li><img class="lazy" data-src="./dist/img/3-min.jpg" src="./dist/img/loading.gif"alt="사진"></li>
+        <li><img class="lazy" data-src="./dist/img/4-min.jpg" src="./dist/img/loading.gif"alt="사진"></li>
+        <li><img class="lazy" data-src="./dist/img/5-min.jpg" src="./dist/img/loading.gif"alt="사진"></li>
+        <li><img class="lazy" data-src="./dist/img/6-min.jpg" src="./dist/img/loading.gif"alt="사진"></li>
+        <li><img class="lazy" data-src="./dist/img/7-min.jpg" src="./dist/img/loading.gif"alt="사진"></li>
+        <li><img class="lazy" data-src="./dist/img/8-min.jpg" src="./dist/img/loading.gif"alt="사진"></li> 
+    </ul>
+</body>
+</html>
